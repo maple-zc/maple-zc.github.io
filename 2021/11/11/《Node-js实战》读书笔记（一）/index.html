@@ -3,7 +3,7 @@
 
 	<head>
 		
-<title>《Node.js实战》读书笔记（一）-Quiet</title>
+<title>《Node.js实战》读书笔记（一）-maple</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -196,7 +196,7 @@
 
     .topo:before {
         content: '';
-        background-image: url(/image/pattern.png);
+        /* background-image: url(/image/pattern.png); */
         background-repeat: repeat;
         height: 100%;
         left: 0;
@@ -316,6 +316,13 @@
     $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
 </script>
 <div class="Last-Next">
+    
+    <a href="/2021/11/12/Yarn%E4%BD%BF%E7%94%A8/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>Yarn使用</p>
+        </div>
+    </a>
     
 
     
